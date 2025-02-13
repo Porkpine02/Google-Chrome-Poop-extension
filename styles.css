@@ -1,0 +1,13 @@
+.highlight {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/your-poop-image.png');
+    background-size: 100% 75%; /* Stretches horizontally, keeps vertical small */
+    background-repeat: no-repeat;
+    background-position: center; /* Ensures it aligns with the text */
+    padding: 5px 10px; /* Keeps natural spacing for text */
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    min-width: 5px; /* Ensures enough space for text */
+    min-height: 10px; /* Prevents forced vertical growth */
+    line-height: normal; /* Keeps text layout natural */
+}

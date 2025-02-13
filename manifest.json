@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Theme & Poop Highlighter",
+  "version": "1.0",
+  "description": "Highlights words with a poop PNG background.",
+  "permissions": ["scripting"],
+  "host_permissions": ["<all_urls>"],
+  "web_accessible_resources": [
+    {
+      "resources": ["your-poop-image.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
